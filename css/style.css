@@ -1,0 +1,721 @@
+/*! 
+
+=========================================================
+*Open fabric Css 
+
+1.common css
+2.homepage css
+=========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+
+/** commom css start **/
+@font-face {
+    font-family: 'metropolisblack';
+    src: url('../fonts/metropolis.black-webfont.eot');
+    src: url('../fonts/metropolis.black-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/metropolis.black-webfont.woff2') format('woff2'),
+        url('../fonts/metropolis.black-webfont.woff') format('woff'),
+        url('../fonts/metropolis.black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'metropolisbold';
+    src: url('../fonts/metropolis.bold-webfont.eot');
+    src: url('../fonts/metropolis.bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/metropolis.bold-webfont.woff2') format('woff2'),
+        url('../fonts/metropolis.bold-webfont.woff') format('woff'),
+        url('../fonts/metropolis.bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'metropolisregular';
+    src: url('../fonts/metropolis.regular-webfont.eot');
+    src: url('../fonts/metropolis.regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/metropolis.regular-webfont.woff2') format('woff2'),
+        url('../fonts/metropolis.regular-webfont.woff') format('woff'),
+        url('../fonts/metropolis.regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'metropolismedium';
+    src: url('../fonts/metropolis.medium-webfont.eot');
+    src: url('../fonts/metropolis.medium-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/metropolis.medium-webfont.woff2') format('woff2'),
+        url('../fonts/metropolis.medium-webfont.woff') format('woff'),
+        url('../fonts/metropolis.medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    /*    width: 1440px;*/
+    margin: 0 auto;
+    color:#666666;
+    font-weight: 400;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: inline-block;
+} 
+a{
+    color:#595959;
+}
+a:hover{
+    text-decoration: none;
+}
+a:-webkit-any-link:focus {
+    outline-offset: 0;
+    outline: none;
+}
+p{
+    margin: 0;
+}
+h1{
+    font-size: 72px;
+}
+h3{
+    font-size: 48px;
+}
+.btn-primary:focus, .btn-primary.focus{
+    box-shadow: none;
+}
+button:focus {
+    outline: none;
+}
+:focus {
+    outline: none;
+}
+select::-ms-expand {display: none; }
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+select{
+    background: url(../img/down-arrow.png) no-repeat;
+    background-position: 93% 52%;
+    background-size: 18px;
+}
+.green_btn{
+    display: inline-block;
+    background: #29A370;
+    border-radius: 4px;
+    font-family: 'metropolisbold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 18.5px 44.5px;
+    color: #ECECEC;
+}
+.green_btn:hover{
+    /*    border: 2px solid #fff;*/
+    color: #ECECEC;
+}
+.orange_btn{
+    display: inline-block;
+    background: #FAFAFA;
+    border-radius: 4px;
+    font-family: 'metropolisbold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 18.5px 44.5px;
+    color: #FC8D2D;
+}
+.orange_btn:hover{
+    color: #FC8D2D;
+}
+/** commom css end **/
+
+/** homepage css start **/
+header {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    top: 0;
+    padding: 20px 90px 20px 70px;
+}
+.nav_menu ul{
+    display: inline-block;
+    margin: 20px 0 0 30px;
+}
+.nav_menu ul li a{
+    font-family: 'metropolisregular';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ECECEC;
+}
+.nav_menu ul li a:hover{
+    color: #FC8D2D;
+}
+.nav_menu ul li:not(:last-child){
+    margin-right: 64px;
+}
+.nav_menu a{
+    float: right;
+}
+.nav_menu_mobile{
+    display: none;
+}
+
+.banner_section{
+    padding: 245px 115px 150px;
+    background-image: url(../img/Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner_section span{
+    font-family: 'metropolisbold';
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FC8D2D;
+    margin-bottom: 6px;
+}
+.banner_section h1{
+    font-family: 'metropolisbold';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ECECEC;
+    margin-bottom: 42px;
+}
+.banner_section p{
+    font-family: 'metropolisregular';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #B4B4B4;
+    margin-bottom: 42px;
+    max-width: 538px;
+}
+.banner_section .green_btn{
+    padding: 18.5px 64px;
+    margin-right: 40px;
+}
+.banner_section .orange_btn{
+    padding: 18px 44.5px;
+}
+.banner_section .orange_btn img{
+    vertical-align: bottom;
+}
+
+.service_section{
+    padding: 45px 115px 55px;
+    background-color: #ECECEC;
+}
+.badge_section {
+    display: inline-block;
+    background-color: #0F101D;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.badge_section img{
+    margin: 18px auto 0;
+    display: table;
+}
+.service_section h5 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 26px;
+    font-family: 'metropolisbold';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0F101D;
+}
+.service_section h5 span{
+    text-decoration: underline;
+}
+.service_bg{
+    height: 79px;
+    width: 96px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+.service_bg:not(:last-child){
+    margin-right: 24px;
+}
+.service_bg img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.purpose_section{
+    padding: 200px 208px;
+    position: relative;
+}
+.purpose_box h3{
+    font-family: 'metropolisblack';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0F101D;
+    margin-bottom: 24px;
+}
+.purpose_box p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    margin-bottom: 24px;
+    max-width: 392px;
+}
+.purpose_box span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #0F101D;
+    margin-bottom: 8px;
+    position: relative;
+    display: inline-block;
+}
+.purpose_box span:after{
+    content: '';
+    display: inline-block;
+    width: 201px;
+    height: 4px;
+    background: #29A370;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+.purpose_box{
+    margin-bottom: 76px;
+}
+.purpose_box h6, .purpose_box1 h6{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #999999;
+}
+.purpose_box h5, .purpose_box1 h5{
+    font-family: 'metropolisregular';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #F0742E;
+    margin-bottom: 24px;
+}
+.purpose_box1 p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    margin-bottom: 24px;
+    max-width: 392px;
+}
+.purpose_section:before{
+    content: '';
+    display: inline-block;
+    background-image: url(../img/left_oval.png);
+    background-repeat: no-repeat;
+    width: 102px;
+    height: 173px;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+}
+.purpose_section:after{
+    content: '';
+    display: inline-block;
+    background-image: url(../img/right_oval.png);
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 173px;
+    position: absolute;
+    right: 0;
+    top: 90px;
+}
+
+.team_section .container{
+    max-width: 1290px;
+}
+.team_title{
+    text-align: center;
+}
+.team_title h3{
+    font-family: 'metropolisblack';
+    font-weight: 900;
+    line-height: 64px;
+    letter-spacing: 0em;
+    margin-bottom: 24px;
+    color: #0F101D;
+}
+.team_title p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    max-width: 640px;
+    margin: 0 auto 24px;
+}
+.team_section {
+    padding: 0 82px;
+}
+.team_btn {
+    text-align: center;
+    margin-top: 48px;
+}
+.team_box {
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+}
+.team_box h5{
+    font-family: 'metropolisbold';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    margin: 24px 0 8px;
+    color: #0F101D;
+}
+.team_box span{
+    font-family: 'metropolismedium';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    margin-bottom: 19px;
+    color: #999999;
+    display: inline-block;
+}
+.team_box p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    max-width: 248px;
+    margin: 0 auto 18px;
+    min-height: 84px;
+}
+.social_team li{
+    width: 32px;
+    height: 32px;
+    border:1px solid #29A370;
+    border-radius: 50%;
+    position: relative;
+}
+.social_team li:not(:last-child){
+    margin-right: 15px;
+}
+.social_team li img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.team_box:hover{
+    box-shadow: 0px 25px 55px 0px #7E7E7E26;
+}
+
+.job_section{
+    padding: 80px 135px;
+}
+.job_section .team_title p{
+    max-width: 826px;
+}
+.job_tab{
+    display: inline-block;
+    width: 100%;
+    padding-top: 40px;
+}
+ul.tabs {
+    margin: 0;
+    padding: 0 0 50px 0;
+    text-align: center;
+    width: 100%;
+}
+ul.tabs li {
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    font-family: 'metropolisbold';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #0F101D;
+    padding-bottom: 12px;
+}
+ul.tabs li:not(:last-child){
+    margin: 0px 80px 0 0;
+}
+ul.tabs li:hover {
+    border-bottom: 4px solid #29A370;
+}
+ul.tabs li.active {
+    border-bottom: 4px solid #29A370;
+}
+.tab_container {
+    display: inline-block;
+    width: 100%;
+}
+.tab_content {
+    display: none;
+}
+.tab_drawer_heading { 
+    display: none; 
+}
+.job_box{
+    border:1px solid #29A370;
+    border-radius: 8px;
+    padding: 27px 30px;
+}
+.job_tab .col-md-4:first-child{
+    margin-bottom: 48px;
+}
+.job_box h4{
+    font-family: 'metropolisbold';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #0F101D;
+    margin-bottom: 50px;
+    max-width: 262px;
+}
+.job_location p{
+    font-family: 'metropolisregular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #A8A8A8;
+}
+.location img{
+    display: inline-block;
+}
+.location p{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.contact_section{
+    padding: 30px 200px;
+    position: relative;
+}
+.contact_section span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #0F101D;
+    margin-bottom: 28px;
+    display: inline-block;
+    position: relative;
+}
+.contact_section span:after {
+    content: '';
+    display: inline-block;
+    width: 201px;
+    height: 4px;
+    background: #29A370;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+.contact_section h3{
+    font-family: 'metropolisblack';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 64px;
+    letter-spacing: 0em;
+    margin-bottom: 24px;
+    color: #0F101D;
+    text-transform: capitalize;
+}
+.contact_section p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    margin-bottom: 48px;
+    max-width: 482px;
+}
+.contact_section:before{
+    content: '';
+    display: inline-block;
+    background-image: url(../img/left_oval.png);
+    background-repeat: no-repeat;
+    width: 102px;
+    height: 173px;
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+    z-index: -1;
+}
+.contact_section:after{
+    content: '';
+    display: inline-block;
+    background-image: url(../img/right_oval.png);
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 173px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+footer {
+    background-color: #0F101D;
+    color: #fff;
+}
+.footer_top {
+    display: inline-block;
+    width: 100%;
+    padding: 40px 104px;
+    border-bottom: 1px solid #1b1c28;
+}
+.footer_1 h6{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2.799999952316284px;
+    margin-bottom: 20px;
+}
+.footer_1 ul li{
+    width: 100%;
+}
+.footer_1 ul li a{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #FFFFFFB2;
+}
+.footer_1 ul li:not(:last-child){
+    margin-bottom: 20px;
+}
+.footer_1 ul li a:hover{
+    color: #FC8D2D;
+}
+.footer_1 .social_footer li{
+    display: inline-block;
+    width: auto; 
+    margin-bottom: 0 !important;
+}
+.footer_1 .social_footer li:not(:last-child){
+    margin-right: 15px;
+}
+.footer_1 .social_footer li{
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+}
+.footer_1 .social_footer li:first-child{
+    background-color: #00A8E3;
+}
+.footer_1 .social_footer li:nth-child(2){
+    background-color: #39589C;
+}
+.footer_1 .social_footer li:nth-child(3){
+    background-color: #D84300;
+}
+.footer_1 .social_footer li:nth-child(4){
+    background-color: #84B735;
+}
+.footer_1 .social_footer li:nth-child(5){
+    background-color: #F3382F;
+}
+.footer_1 .social_footer li:nth-child(6){
+    background-color: #ED3B95;
+}
+.footer_1 .social_footer li:nth-child(7){
+    background-color: #1368FF;
+}
+.footer_1 .social_footer li i{
+    position: absolute;
+    left:7px;
+    top: 7px;
+    margin: auto;
+    color: #fff;
+    font-size: 12px;
+}
+.footer_1.col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 18%;
+    flex: 0 0 18%;
+    max-width: 18%;
+}
+.footer_2.col-md-3{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+.footer_bottom{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 104px;
+}
+.copyright_text img{
+    display: inline-block;
+}
+.copyright_text p{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #FFFFFFB2;
+}
+.copyright_logo img:not(:last-child){
+    margin-right: 20px;
+}
+/** homepage css end **/
